@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* paleta de cores */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body, html {
+    background-image: linear-gradient(to top, rgb(20, 3, 3), black);
+    height: 100vh;
+    width: 100vw;
+}
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px red;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+section#login div#imagem {
+    display:block;
+    background: url(../Imagens/itachi_uchiha_1296x.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+}
+
+section#login div#formulario {
+    display: block ;
+    padding: 10px;
+}
+
+.campo {
+    margin: 5px;
+}

@@ -1,0 +1,38 @@
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    font: normal 20px Arial;
+    color: rgb(8, 168, 61);
+}
+
+section {
+    background: rgb(156, 247, 212);
+    margin: 0 auto;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: rgb(6, 99, 48);
+}
+
+
+#botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+footer {
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
+
+#res {
+    margin-top: 20px;
+}

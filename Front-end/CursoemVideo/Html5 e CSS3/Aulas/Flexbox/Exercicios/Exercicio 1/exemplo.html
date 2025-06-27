@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Alinhamento</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 300px;
+      background-color: #ddd;
+      margin-bottom: 40px;
+      gap: 10px;
+    }
+
+    .item {
+      background-color: teal;
+      color: white;
+      padding: 20px;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+    }
+
+    /* Exemplo 1 - align-items */
+    .align-items {
+      align-items: center; /* Alinha os itens individualmente no centro vertical */
+    }
+
+    /* Exemplo 2 - align-content */
+    .align-content {
+      align-content: center; /* Alinha o conjunto de linhas no centro vertical */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Exemplo com <code>align-items: center</code></h2>
+  <div class="container align-items">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <h2>Exemplo com <code>align-content: center</code></h2>
+  <div class="container align-content">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+  </div>
+
+</body>
+</html>
