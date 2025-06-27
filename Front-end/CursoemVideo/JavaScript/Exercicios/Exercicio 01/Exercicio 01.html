@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerário de viagem</title>
+    <style>
+        h1 {
+            font: Normal 20pt Arial;
+            height: 50px;
+            text-align: center;
+            padding-top: 2%;
+            padding-bottom: 1%;
+        }
+        input#local, #data {
+            width: 240px;
+            text-align: center;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lugares que você gostaria de ir</h1>
+    <input type="text" name="local" id="local" placeholder="Qual lugar você gostaria de visitar?">
+    <input type="button" value="Validar" class="button1" onclick="validar()">
+    <br>
+    <input type="text" name="data" id="data" placeholder="Quando você gostaria de ir?">
+    <input type="button" value="Validar" class="button1" onclick="validar()">
+    <div id="res"></div>
+    <script>
+        function validar() {
+        var local1 = window.document.querySelector("input#local").value
+        var data1 = window.document.querySelector("input#data").value
+        var res = window.document.querySelector("div#res")
+
+        res.innerHTML = `Você gostaria de visitar o local <strong>${local1}</strong> no mês de <strong>${data1}</strong>.`
+            
+        }
+    </script>
+</body>
+</html>

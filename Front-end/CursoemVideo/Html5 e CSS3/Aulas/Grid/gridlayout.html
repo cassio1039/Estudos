@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Grid layout</h1>
+        </header>
+        <section>
+            <h2>Propriedades do Grid layout (container):</h2>
+            <p><b>Display:</b> Torna o container um display grid e tudo o que estiver dentro deles, se torna grid items.</p>
+            <p><b>Grid-template-columns:</b> Definir quantas colunas terá o grid.</p>
+            <p><b>Grid-template-row:</b> Definir quantas linhas terá o grid.</p>
+            <p><b>Grid-template:</b> Faz a junção do grid-template-rows/columns em uma única propriedade, sendo primeiro o rows e depois a column.</p>
+            <p><b>Grid-gap:</b> Definir qual será o espaçamento entre as linhas e colunas. (gap , row-gap, column-gap)</p>
+            <p><b>Align-items:</b> Alinhamento vertical dos itens.</p>
+            <p><b>Justify-items:</b> Alinhamento horizontal dos itens.</p>
+            <p><b>Place-items: </b>Forma simplificada de  especificar o align-items e o justify-items ao mesmo tempo, primeiro o align e depois o justify.</p>
+            <p><b>Align-content:</b> Alinhamento vertical do conteúdo.</p>
+            <p><b>Justify-content:</b> Alinhamento horizontal do conteúdo.</p>
+            <p><b>Place-content: </b>Forma simplificada de especificar o align-content e o justify-content ao mesmo tempo, primeiro vem o align e depoiso justify.</p>
+            <p><b>Grid-auto-row:</b> Toda linha que for criada que não tiver especificação no template-row, ela pode ser especificada por aqui </p>
+            <p><b>Grid-auto-column:</b> Toda coluna que for criada que não tiver especificação no template-column, ela pode ser especificada por aqui</p>
+            <p><b>Grid-auto-flow:</b> Ele completa a linha ou coluna que sobra das medidas de grid-auto-row/column</p>
+            <p><b>Função repeat(): </b>Um encurtador que ao invés de digitar várias vaezes o valor do row e column, você coloca: repeat(quantidade de vezes, parâmetro)</p>
+            <p><b>Frações: </b>Você usa o termo "fr" para dividir o tamanho total em tamanhos iguais.</p>
+            <h2>Propriedades do Grid layout (items):</h2>
+            <p><b>Grid-row-start: </b>Faz a demarcação de onde <b>começa</b> o item na LINHA.</p>
+            <p><b>Grid-row-end:</b> Faz a demarcação de onde <b>termina</b> o item na LINHA.</p>
+            <p><b>Grid-column-start:</b> Faz a demarcação de onde <b>começa</b> o item na COLUNA.</p>
+            <p><b>Grid-column-end:</b> Faz a demarcação de onde <b>termina</b> o item na COLUNA.</p>
+            <p><b>Span:</b> Ele expande a quantidade delimitada de linhas e colunas, só pode ser usada no "end" ex: se começa na linha 1 e termina na linha 4, o span será de <b>3</b> porque expandiu do 1 ao 4, o último número não conta.</p>
+            <h3>Shorthand items</h3>
+            <p><b>Grid-row: </b>É possível colocar os valores do start e do end, sendo o primeiro o start e o segundo end. Ex: <b>grid-row: 1/4;</b> Significa que o grid-row-start é de valor 1 e o grid-row-end é de valor 4</p>
+            <p><b>Grid-column: </b>É possível colocar os valores do start e do end, sendo o primeiro o start e o segundo end. Ex: <b>grid-column: 1/4;</b> Significa que o grid-column-start é de valor 1 e o grid-column-end é de valor 4</p>
+            <p><b>Grid-area:</b> É possível colocar todos os valores tanto do row, quanto do column em um único atributo, seguido pela seguinte ordem: 
+            <ol>
+                <b>
+                    <li>Grid-row-start: 1</li>
+                    <li>Grid-column-start: 1</li>
+                    <li>Grid-row-end: 4</li>
+                    <li>Grid-column-end: 3</li>
+                </b>
+            </ol> 
+            Ficando desse jeito: <b>Grid-area: 1/1/4/3;</b></p>
+        </section>
+    </main>
+</body>
+</html>
