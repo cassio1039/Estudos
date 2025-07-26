@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>O que endpoint? E API?</h1>
+    <h2>Endpoint</h2>
+        <p>Ponto final ou local final que uma requisição vai chegar, isso significa que qualquer lugar na internet é um endpoint.</p>
+        <p>Normalmente se assume que o termo endpoint se refere a um endereço de uma API.</p>
+    <h2>API</h2>
+        <p><b>Application Programming Interface:</b> Interface de Programação de Aplicações.</p>    
+        <p><b>Interface: </b>Tudo o que vemos hoje é uma interface.</p>
+        <ul>
+            <p>Exemplo:
+                <li>Página web do github</li>
+                <li>Página web da globo</li>
+                <li>Página web do google</li>
+                <li>Página web da meta</li>
+                <li>Painel de um carro</li>
+                <li>Painel de uma moto</li>
+                <p>Tudo o que nós vemos de inicío é uma interface.</p>
+            </p>
+        </ul>
+        <p>Se não estamos mexendo nos detalhes de como as coisas foram feitas ou cavucando a implementação, estamos usando uma interface.</p>
+
+        <p><b>Abstração: </b>Evitar mexer nos detalhes de implementação para usar um componente, um model, função ou método. Para isso nos comunicamos com as interfaces, as interfaces são as bordas das funcionalidades e responsabilidades. A falta das interfaces faz o código ser macarrônico, você olha pro código e não consegue saber onde cada responsabilidade começa ou termina. As interfaces servem para usar algo de forma mais fácil, sem entender como aquilo foi feito.</p>   
+
+        <p><b>Interfaces programáveis: </b>Enquanto as páginas servem para agradar os humanos, as APIs servem para que as máquinas tenham um acesso programático (mais direto, com mais previsibilidade) as informações.</p>
+        <p>As interfaces web trazem mais ruído e tendem a mudar ao longo do tempo. A mesma interface programável (API), pode servir a diferentes interfaces "para humanos".</p>
+
+        <h3>Alguns tipos de interface:</h3>
+        <p><b>TUI:</b> Text-based User Interface (Interface de Usuário baseado em Texto) é o que usamos dentro do terminal.</p>
+
+        <p><b>GUI: </b>Graphical User Interface (Interface de Usuário Gráfica) é o que a maioria dos usuários usam dentro do navegador.</p>
+
+        <p>Diferentes tipos de interface podem ser criadas usando a mesma API. Clients diferentes que se comunicam via HTTP podem se comunicar com o mesmo servidor em HTTP.</p>
+
+        <p><b>curl:</b> Abreviação de Client URL, uma ferramente que pede <b>(Request)</b> e a que recebe <b>(Response)</b> algo que foi requerido.</p>
+        <p>
+            Um <b>comando</b> curl é simples assim: <b>curl http://localhost:3000/api/status</b>, ele verifica o que foi pedido e o que foi recebido.
+        </p>
+        <p>Para ver em detalhes usar o comando <b>--verbose ou -v</b> (curl http://localhost:3000/api/status -v)</p>
+
+        <p>E é exatamente isso que navegador usa para mostrar as páginas web, ele faz uma request dessa mesma forma e entende quando a response é um html que ele deve formatar para o usuário.</p>
+</body>
+</html>
