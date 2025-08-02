@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comandos docker</h1>
+    <ul>
+        <li>
+            <p><b>docker compose up: </b>Rodar a imagem em um container.</p>
+        </li>
+        <li>
+            <p><b>docker compose up -d (detached): </b>Rodar a imagem do container em um segundo plano.</p>
+        </li>
+        <li>
+            <p><b>docker compose down:</b> Destrói a imagem do container.</p>
+        </li>
+        <li>
+            <p><b>docker compose up --force-recreate: </b>Força a recriação do container sem desliga-lo.</p>
+        </li>
+        <li>
+            <p><b>docker compose -f [path/arquivo] up: </b>Sobe a imagem a partir de um arquivo compose.yaml no caminho especificado.</p>
+        </li>
+        <li>
+            <p><b>docker ps: </b>Lista todos os containers rodando.</p>
+        </li>
+        <li>
+            <p><b>docker -ps -a:</b> Lista todos os containers existentes, inclusive os que não estão em uso.</p>
+        </li>
+        <li>
+            <p><b>docker logs (nome do container):</b> Retorna os logs do container especificado pelo nome</p>
+        </li>
+        <li>
+            <p><b>psql --host=localhost --username=postgres --port=5432: </b>Conectar ao cliente psql do PostgreSQL.</p>
+        </li>
+    </ul>
+</body>
+</html>
