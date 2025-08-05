@@ -1,9 +1,7 @@
 .heading {
-    background-color: black;
-    color: cyan;
-}
-
-.green {
-    background-color: green;
-    color: whitesmoke;
+    margin: 32px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
