@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/* MODO DEITADO */
+
+body {
+    background-image: url(../Imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPRIEDADES DO GRID</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgba(127, 255, 212, 0.521);
+        }
+        .container {
+            border: 3px solid red;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px;
+            gap: 25px;
+        }
+        .item{
+            border: 3px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

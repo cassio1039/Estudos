@@ -1,0 +1,20 @@
+/* configuração geral */
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: yellowgreen;
+    text-shadow: 3px 3px 0px rgba(153, 205, 50, 0.411);
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            width: 600px;
+            height: 400px;
+        }
+        .order {
+            height: 150px;
+            width: 450px;
+        }
+        #flex {
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-container: (elemento pai)</h1>    
+    <h2>Eixos</h2>
+    <h3><b>Flex-direction:</b> </h3>
+    <p>Direção deitada na horizontal:</p>
+    <ul>
+        <li><b>row:</b> (Deitado (horizontal) da esquerda pra direita) </li>
+        <li><b>row reverse:</b> (Deitado (horizontal) da direita para esquerda ) </li>
+        <li><b>colum:</b> (Em pé (vertical) de cima para baixo)</li>
+        <li><b>colum-reverse:</b> (Em pé (vertical) de baixo para cima)</li>
+    </ul>
+    <h3>Flex-wrap:</h3>
+    <p>Direção em pé na vertical:</p>
+    <ul>
+        <li><b>nowrap:</b> Não quebra linha</li>
+        <li><b>wrap:</b> Quebra de linha para caber conteúdo para baixo </li>
+        <li><b>wrap-reverse:</b> Quebra de linha para caber conteúdo para cima</li>
+    </ul>
+    <h3>Flex-flow:</h3>
+    <p>Usa-se o flex-flow como uma junção de flex-direction e flex-wrap ao mesmo tempo: sendo a primeira opção é a configuração da horizontal e a segunda opção é da configuração na vertical.</p>
+    <h2>Alinhamento de counteúdo </h2>
+    <h3>Justify-content:</h3>
+    <p>Usa-se o justify-content para fazer o alinhamento do conteúdo no main-axis</p>
+    <ul>
+        <li><b>Start:</b> Tem o direcionamento do main-axis do começo para o fim</li>
+        <li><b>End:</b> Tem o direcionamento do main-axis do fim para o começo </li>
+        <li><b>Center:</b> Vai alinhar tudo no meio do main-axis distribuindo o conteúdo por todo o container</li>
+        <li><b>Space-between:</b> Coloca o primeiro item no main-start e o último item no main-end e centralizando o resto do conteúdo com espaçamento igual</li>
+        <li><b>Space-evenly:</b> Todos os espaçamento do conteúdo tem o mesmo tamanho no main-axis</li>
+        <li><b>space-around:</b> Vai pegar o valor total do container e dividir igualmente entre os elementos dentro do container no main-axis </li>
+        <img src="Aulas/Aula 05/Imagens/justify-content.png" alt="">
+    </ul>
+    <h3>Align-items:</h3>
+    <p>Usa-se o Align-items para fazer o alinhamento da caixa do cross-axis</p>
+    <ul>
+        <li><b>Start:</b> Tem o direcionamento do cross-axis do começo para o fim</li>
+        <li><b>End:</b> Tem o direcionamento do cross-axis do fim para o começo </li>
+        <li><b>Center:</b> Vai alinhar tudo no meio do cross-axis distribuindo o conteúdo por todo o container</li>
+        <li><b>Space-between:</b> Coloca o primeiro item no cross-start e o último item no cross-end e centralizando o resto do conteúdo com espaçamento igual</li>
+        <li><b>Space-evenly:</b> Todos os espaçamento do conteúdo tem o mesmo tamanho.</li>
+        <li><b>space-around:</b> Vai pegar o valor total do container e dividir igualmente entre os elementos dentro do container </li>
+    </ul>
+    <h3>Align-content:</h3>
+    <p>Vai alinhar o conteúdo dentro do cross-axis dentro do espaço da caixa </p>
+    <ul>
+        <li><b>Streatch:</b> Estica o conteúdo dentro do espaço proposto</li>
+        <li><b>Flex-start:</b> Pegar todos os elementos e colocar grudados no cross-start e o cross-end ficando livre</li>
+        <li><b>Flex-end:</b>Pegar todos os elementos e colocar grudados no cross-end e o cross-start ficando livre</li>
+        <li><b>Center:</b> Pega todo o conteúdo e centraliza</li>
+        <li><b>Space-between:</b> Coloca o primeiro item no cross-start e o último item no cross-end e centralizando o resto do conteúdo com espaçamento igual</li>
+        <li><b>Space-evenly:</b> Todos os espaçamento do conteúdo tem o mesmo tamanho no cross-axis</li>
+        <li><b>space-around:</b> Vai pegar o valor total do container e dividir igualmente entre os elementos dentro do container no cross-axis </li>
+    </ul>
+    <h3>Align-self:</h3>
+    <p>Serve somente para container "filhos" e não container "pais"</p>
+    <img src="Imagens/Align-self.png" alt="">
+    <h3>Order:</h3>
+    <p>Todo item dentro da flex-box vai ter <b>order:0</b> por padrão e ele é organizado por ordem crescente, exemplo:</p>
+    <img class="order" src="Imagens/Order 1.png" alt="">
+    <p>Ficando em ordem crescente:</p>
+    <img class="order" src="Imagens/Order 2.png" alt="">
+
+    <h1>Flex-items (elemento filho(conteudo))</h1>
+    <h3>Flex-basis</h3>
+    <p>A largura dos itens para cada elemento é dada pelo seu conteúdo e o flex-basis serve justamente para dizer o tamanho da base do conteúdo.</p>
+    <ul>
+        <li><b>flex-grow:</b>Tamanho 0 e 1, siginifica que o conteúdo pode crescer</li>
+        <li><b>flex-shrink:</b>Tamanho 0 e 1, significa que o conteúdo pode encolher</li>
+    </ul>
+    <h3>Propriedade: flex</h3>
+    <p>A propriedade flex tem como base automática o grow + shrink + basis:</p>
+    <img id="flex" src="Imagens/propriedade flex.png" alt="">
+    <p><b>flex: initial</b> é igual a flex: 0 1 auto;</p>
+    <p><b>flex: none</b> é igual a flex 0 0 auto;</p>
+    <p><b>flex: auto</b> é igual a flex: 1 1 auto;</p>
+
+</body>
+</html>
